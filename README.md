@@ -39,7 +39,7 @@ some of them not, and tested their output.
 I thank Illumio for giving this challenge as opposed to a Hackerrank coding test. I definitely got to learn a lot more doing this challenge, that i would ever learn with a coding test.
 It was really fun to do this project, and I hope to hear a positive response from the team! Also, I would love to discuss any shortcomings or improvements needed in this project!
 
-##Teams:
+## Teams:
 I would love to work with the Data Team as i have a knack for Data Analysis and Visualisation. I also have some experience in Machine Learning and have built a couple of projects to strengthen my skills in the same.
 I have enrolled myself in Statistics and Big Data Courses at my University, which will be useful to me for my Internship.
 
