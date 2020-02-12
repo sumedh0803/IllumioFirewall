@@ -1,0 +1,19 @@
+Improvements:
+    1. Since there can be multiple ip addresses for a port, searching through the IPs will take O(n) time, since we have stored the IPs in a list
+    [see: https://wiki.python.org/moin/TimeComplexity]. 
+    2. This time can be reduced by writing a custom searching function (Eg. binary search or hashing)
+    3. If binary search needs to be implemented, the IPs need to be in their decimal form (or at least be converted to decimal from before searching), and also should be in sorted order
+    4. If hashing needs to be implemented, minor changes to the structure of the dictionary has to be made. In place of a List (which is currently a value at 
+    {inbound:tcp{
+                    port_number: List[]
+                },
+            udp{
+                    port_number: List[]
+                }})
+    another dictionary can be used, with the key as IP address and value as any dummy value (Eg. 1). Thus, searching can take place in O(1) time.
+    5. However, this will increase the space used by the dictionary. O(2nm) ~ O(nm) n keys, with m sub keys and each key having a value. This dummy value takes up extra space (represented by the factor '2'),
+       which is not present in case of a List
+    
+    6. In case of our original dictionary, space used is of the order O(nm) [n keys with values as arrays of size m]
+    7. So there is a tradeoff between time required to search and space needed to store the rules. In this case, I have chosen Space over Performance, since there weren't many rules to add to my dictionary. So searching won't take much time
+     

@@ -1,0 +1,5 @@
+External Sources:
+    1. https://stackoverflow.com/questions/55404141/read-a-csv-file-and-perform-data-analysis-without-using-any-libraries-like-numpy
+    2. https://stackoverflow.com/questions/16333296/how-do-you-create-nested-dict-in-python
+    3. https://softwareengineering.stackexchange.com/questions/112662/how-costly-are-the-python-dict-and-set-in-built-types
+    4. https://stackoverflow.com/questions/15641344/python-memory-consumption-dict-vs-list-of-tuples
