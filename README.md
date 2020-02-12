@@ -2,9 +2,8 @@
 
 ## This was a coding challenge by Illumio, as a part of their interviewing process.
 
-The Python Script takes rules for a Firewall from the fw.csv file, and adds them to a Python Dictionary
-Later, while we can check if a particular combination of direction (outbound/inbound), protocol (tcp/udp), port numbers [1-65535] and IP addresses
-[0.0.0.0 to 255.255.255.255] should be allowed by the firewall or not.
+The Python script takes rules for a Firewall from the fw.csv file, and adds them to a Python Dictionary
+Later, we can check if a particular combination of direction (outbound/inbound), protocol (tcp/udp), port numbers [1-65535] and IP addresses [0.0.0.0 to 255.255.255.255] should be allowed by the firewall or not.
 
 ### Design
 The firewall rules are stored in a dictionary within a dictionary. I decided to split the direction of the packet as 2 separate keys. 
