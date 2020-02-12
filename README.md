@@ -1,18 +1,18 @@
-#ILLUMIO CODING CHALLENGE
+# ILLUMIO CODING CHALLENGE
 
-##This was a coding challenge by Illumio, as a part of their interviewing process.
+## This was a coding challenge by Illumio, as a part of their interviewing process.
 
 The Python Script takes rules for a Firewall from the fw.csv file, and adds them to a Python Dictionary
 Later, while we can check if a particular combination of direction (outbound/inbound), protocol (tcp/udp), port numbers [1-65535] and IP addresses
 [0.0.0.0 to 255.255.255.255] should be allowed by the firewall or not.
 
-###Design
+### Design
 The firewall rules are stored in a dictionary within a dictionary. I decided to split the direction of the packet as 2 separate keys. 
 Within each key, I had another dictionary where I separated the protocols. 
 Although this takes up space to store, this would help with time because the program would not have to search through the entire list of rules, just the ones with the input direction and protocol.
 I decided to use direction and protocol as my keys is because they were single strings as opposed to ports and IPs which had both single values and ranges.
 
-###Improvements
+### Improvements
     1. Since there can be multiple ip addresses for a port, searching through the IPs will take O(n) time, since we have stored the IPs in a list
     [see: https://wiki.python.org/moin/TimeComplexity]. 
     2. This time can be reduced by writing a custom searching function (Eg. binary search or hashing)
@@ -33,13 +33,13 @@ I decided to use direction and protocol as my keys is because they were single s
     7. So there is a tradeoff between time required to search and space needed to store the rules. In this case, I have chosen Space over Performance, since there weren't many rules to add to my dictionary. So searching won't take much time
     8. Another improvement can be, implementing command line arguments, wherein, direction, protocol, port and ip address can be given to the code as command line arguments, instead of hardcoding them in the program
     
-###Testing
+### Testing
 1. I considered a couple of combinations of directions, protocols, port numbers and IP addresses, some of them included in the rules and 
 some of them not, and tested their output.
 2. Since it was mentioned that the input parameters will be valid and according to the specifications, i did not test for invalid input.
 3. I could not implement Unit or Integration testing since I do not have experience in testing applications.
 
-###Comments
+### Comments
 I thank Illumio for giving this challenge as opposed to a Hackerrank coding test. I definitely got to learn a lot more doing this challenge, that i would ever learn with a coding test.
 It was really fun to do this project, and I hope to hear a positive response from the team! Also, I would love to discuss any shortcomings or improvements needed in this project!
 
