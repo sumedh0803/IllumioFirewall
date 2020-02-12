@@ -24,7 +24,7 @@ I decided to use direction and protocol as my keys is because they were single s
                 },
         outbound {...}})
     another dictionary can be used, with the key as IP address and value as any dummy value (Eg. 1). Thus, searching can take place in O(1) time.
-5. However, this will increase the space used by the dictionary. O(2nm) ~ O(nm) n keys, with m sub keys and each key having a value. This dummy value takes up extra space (represented by the factor '2'), which is not present in case of a List
+5. However, this will increase the space used by the dictionary. O(2nm) ~ O(nm) [n keys, with m sub keys and each key having a value]. This dummy value takes up extra space (represented by the factor '2'), which is not present in case of a List
 6. In case of our original dictionary, space used is of the order O(nm) [n keys with values as arrays of size m]
 7. So there is a tradeoff between time required to search and space needed to store the rules. In this case, I have chosen Space over Performance, since there weren't many rules to add to my dictionary. So searching won't take much time
 8. Another improvement can be, implementing command line arguments, wherein, direction, protocol, port and ip address can be given to the code as command line arguments, instead of hardcoding them in the program
