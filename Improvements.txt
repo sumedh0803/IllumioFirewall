@@ -17,4 +17,4 @@ Improvements:
     
     6. In case of our original dictionary, space used is of the order O(nm) [n keys with values as arrays of size m]
     7. So there is a tradeoff between time required to search and space needed to store the rules. In this case, I have chosen Space over Performance, since there weren't many rules to add to my dictionary. So searching won't take much time
-     
+    8. Another improvement can be, implementing command line arguments, wherein, direction, protocol, port and ip address can be given to the code as command line arguments, instead of hardcoding them in the program
